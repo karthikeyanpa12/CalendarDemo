@@ -1,6 +1,6 @@
 # SPO recruitment task for junior front-end developers
 
-Hello! If you are here then you reached the coding challenge for junior front-end developers at SPO! 
+Hello! If you are here then you reached the coding challenge for senior front-end developers at SPO! 
 Bellow you will find some description, which is very close to the stuff, that we are actualy working in SPO.
 
 The souce code of the solution should be provided as a bunch of files. It is highly recommended to use some build tools (preferably gulp or webpack) and push all the sources to git repository so you will be able to demonstrate also your ability of working with build tools and git itself. Please note that **code quality** is also important for us.
