@@ -16,7 +16,7 @@ You should take no more than 4h to complete this task.
 
 You should start by rendering a single month view of a calendar for the current month – along the lines of the below illustration:
 
-![alt text](https://github.com/gevorgmakaryan/spo-jr-coding-challenge/blob/master/2017-09-07_2136.png)
+![alt text](https://github.com/gevorgmakaryan/spo-sr-dev-test/blob/master/Screen-Shot-2018-07-25-at-14.21.00-768x549.png)
 
 
 ### Technical requirements
