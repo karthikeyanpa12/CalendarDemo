@@ -34,7 +34,7 @@ You can be creative with your idea of the calendar. You could do a daily list vi
 
 6. Use a CSS preprocessor like LESS or Sass
 
-7. Provide a readme with an instruction how to install your appication
+7. Provide a readme with an instruction how to install your application
 
 
 ### Bonus (optional)
