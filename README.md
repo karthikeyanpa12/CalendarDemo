@@ -1,4 +1,4 @@
-# SPO recruitment task for senior front-end developers
+# SPO recruitment task for senior Frontend Developers
 
 Hello! If you are here then you reached the coding challenge for senior Frontend Developers at SPO! 
 This coding challenge should represent a task that is very close to what we are usually work on at SPO.
