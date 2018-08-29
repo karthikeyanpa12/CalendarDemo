@@ -1,7 +1,8 @@
 # SPO recruitment task for senior front-end developers
 
-Hello! If you are here then you reached the coding challenge for senior front-end developers at SPO! 
-Bellow you will find some description, which is very close to the stuff, that we are actualy working in SPO.
+Hello! If you are here then you reached the coding challenge for senior Frontend Developers at SPO! 
+This coding challenge should represent a task that is very close to what we are usually work on at SPO.
+You should take no more than 4h to complete this task.
 
 The souce code of the solution should be provided as a bunch of files. It is highly recommended to use some build tools (preferably gulp or webpack) and push all the sources to git repository so you will be able to demonstrate also your ability of working with build tools and git itself. Please note that **code quality** is also important for us.
 
@@ -10,34 +11,39 @@ Good luck to you and hope you will enjoy the process while solving this task!
 
 ## Create a demo calendar application
 
-The aim of this exercise is to create a demo calendar application using React & Redux. You can use 'npm mock-json-server' to mock the server data and do the proper API calles. You need to use *REST API* to get the data.
+The aim of this exercise is to create a demo calendar application using React & Redux. You can use 'npm mock-json-server' to mock the server data and do the proper API calls. You need to use *REST API* to get the data.
 
-You should take no more than 4h to complete this task.
+Our focus is on the functionality of the calendar, especially on the data fetching. And don't worry, if you can't finish it in the given time, we will just have a look at what you have done so far and you can explain your code to us :-)
 
-You should start by rendering a single month view of a calendar for the current month – along the lines of the below illustration:
+You can be creative with your idea of the calendar. You could do a daily list view calendar or stick more to this example:
 
 ![alt text](https://github.com/gevorgmakaryan/spo-sr-dev-test/blob/master/Screen-Shot-2018-07-25-at-14.21.00-768x549.png)
 
 
 ### Technical requirements
 
-
 1. Ability to add a new “reminder” (max 30 chars) for a user entered day and time.
 
 2. Display reminders on the calendar view in the correct time order.
 
-3. Allow the user to select a colour when creating a reminder and display it appropriately.
+3. Ability to edit reminders – including changing text, day and time & colour.
 
-4. Properly handle overflow when multiple reminders appear on the same date.
+4. Ability to delete reminders.
 
-5. Ability to edit reminders – including changing text, day and time & colour.
+5. Calendar should be responsive.
 
-6. Ability to delete reminders.
+6. Use a CSS preprocessor like LESS or Sass
 
-7. Expand the calendar to support more than current month.
+7. Provide a readme with an instruction how to install your appication
 
 
 ### Bonus (optional)
 
-Writing unit tests for the available features will be considered as a big plus.
+1. Writing unit tests for the available features will be considered as a big plus.
+
+2. Find a nice way to handle the displaying of the reminders, when multiple appear on the same date.
+
+3. Allow the user to select a colour when creating a reminder and display it appropriately.
+
+4. Prev / Next month (or day) functionality
 
