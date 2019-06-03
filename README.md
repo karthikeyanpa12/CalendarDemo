@@ -1,10 +1,10 @@
-# SPO recruitment task for senior Frontend Developers
+# SPO recruitment task for Frontend Developers
 
-Hello! If you are here then you reached the coding challenge for senior Frontend Developers at SPO! 
+Hello! If you are here then you reached the coding challenge for Frontend Developers at SPO! 
 This coding challenge should represent a task that is very close to what we are usually work on at SPO.
-You should take no more than 4h to complete this task.
+You should take no more than 5h to complete this task.
 
-The souce code of the solution should be provided as a bunch of files. It is highly recommended to use some build tools (preferably gulp or webpack) and push all the sources to git repository so you will be able to demonstrate also your ability of working with build tools and git itself. Please note that **code quality** is also important for us.
+The souce code of the solution should be provided as a bunch of files (or via github repo). It is highly recommended to use some build tools (preferably webpack) and push all the sources to git repository so you will be able to demonstrate also your ability of working with build tools and git itself. Please note that **code quality** is also important for us.
 
 Good luck to you and hope you will enjoy the process while solving this task!
 
@@ -32,18 +32,26 @@ You can be creative with your idea of the calendar. You could do a daily list vi
 
 5. Calendar should be responsive.
 
-6. Use a CSS preprocessor like LESS or Sass
+6. Use a CSS preprocessor like LESS
 
 7. Provide a readme with an instruction how to install your application
+
+8. You should you React + redux.
 
 
 ### Bonus (optional)
 
-1. Writing unit tests for the available features will be considered as a big plus.
+1. Writing unit tests for the available features will be considered as a big plus (Jest, Enzyme).
 
 2. Find a nice way to handle the displaying of the reminders, when multiple appear on the same date.
 
 3. Allow the user to select a colour when creating a reminder and display it appropriately.
 
 4. Prev / Next month (or day) functionality
+
+5. Use date-fns for dates or other simple library (avoid using moment.js).
+
+6. Drag&drop ability to sort reminders.
+
+7. Using react hooks.
 
