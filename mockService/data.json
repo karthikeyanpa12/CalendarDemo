@@ -1,0 +1,14 @@
+{
+    "/reminders": {
+        "get": [
+            {
+                "date": "09/08/2019",
+                "message": "Birthday"
+            },
+            {
+                "date": "10/08/2019",
+                "message": "New Year"
+            }
+        ]
+    }
+}
