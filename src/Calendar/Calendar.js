@@ -92,13 +92,14 @@ export class Calendar extends PureComponent {
     const selectedDate = (this.state.reminders.filter(obj => obj.date === this.state.selectedDate) || []);
     const isDateExist = selectedDate.length > 0;
 
+    const id = selectedDate[0] && selectedDate[0].date ? Date.parse(selectedDate[0].date) : Date.parse(new Date);
     return (
       <div className="calendar">
         {this.renderHeader()}
         {this.renderDays()}
         {this.renderCells()}
         <Modal isDateExist={isDateExist} show={showModal} updateReminder={this.updateReminder} onDelete={this.onDelete}
-          onClose={this.onClose} message={selectedDate[0] && selectedDate[0].message}></Modal>
+          onClose={this.onClose} id={id} message={(selectedDate[0] && selectedDate[0].message) || ''}></Modal>
       </div>
     );
   }

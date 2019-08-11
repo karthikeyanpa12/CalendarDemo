@@ -3,17 +3,24 @@ import "./modal.css";
 import PropTypes from "prop-types";
 
 export default class Modal extends React.Component {
-    state = { disabled: false, value: this.props.message };
+    constructor(props) {
+        super();
+        this.state = { disabled: false, value: props.message || '' };
+    }
 
-    componentDidUpdate(prevProps) {
-        const { message } = this.props;
-        if (prevProps.message !== message) {
+    componentDidUpdate = (prevProps) => {
+        const { message = '' } = this.props;
+        if (prevProps.message !== message || (!!message && this.state.value === '')) {
             this.setState({ value: message });
         }
     }
 
-    onClose = e => {
+    clearData = () => {
         this.setState({ value: '', disabled: false });
+    }
+
+    onClose = e => {
+        this.clearData();
         this.props.onClose && this.props.onClose(e);
     };
 
@@ -26,9 +33,10 @@ export default class Modal extends React.Component {
         }
     }
 
-    onSubmit = () => {
+    onSubmit = async () => {
         const { value } = this.state;
-        this.props.updateReminder(value);
+        await this.props.updateReminder(value);
+        await this.clearData();
     }
 
     onDelete = () => {
@@ -36,17 +44,17 @@ export default class Modal extends React.Component {
     }
 
     render() {
-        const { isDateExist } = this.props;
-        const { disabled } = this.state;
+        const { isDateExist, id } = this.props;
+        const { disabled, value } = this.state;
 
         if (!this.props.show) {
             return null;
         }
         return (
-            <div className="modal" id="modal">
+            <div className="modal" id={id}>
                 <h2>Events</h2>
                 <div className="content">
-                    <textarea type="text" value={this.state.value} onChange={this.handleChange} />
+                    <textarea type="text" value={value} onChange={this.handleChange} />
                     {disabled && "Message Reached Maximum characters"}
                 </div>
                 <div className="actions">
